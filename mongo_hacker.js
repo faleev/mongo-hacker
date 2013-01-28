@@ -44,6 +44,11 @@ __indent = "  ";
 // Values: "java", "c#", and "default"
 uuidType = "java";
 
+function setVerboseShell( value ) {
+    if( value === undefined ) value = true;
+    _verboseShell = value;
+}
+
 function setIndexParanoia( value ) {
     if( value === undefined ) value = true;
     _indexParanoia = value;
