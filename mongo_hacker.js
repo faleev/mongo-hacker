@@ -89,6 +89,9 @@ function getEnv(env_var){
     return env.match(env_regex)[1];
 }
 
+// Force pretty output
+DBQuery.prototype._prettyShell = true;
+
 ObjectId.prototype.toString = function() {
     return this.str;
 };
