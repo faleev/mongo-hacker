@@ -577,7 +577,7 @@ prompt = function() {
     }
     var mongos = db.isMaster().msg == 'isdbgrid';
     var state = mongos ? '' : rs_state;
-    return host + '(' + process + '-' + version + ')' + state + ' ' + db + '> ';
+    return '\n' + host + ' (' + process + '-' + version + ')' + state + ' ' + '[' + db + ']' + '\n' + '> ';
 };
 
 DBQuery.prototype.shellPrint = function(){
